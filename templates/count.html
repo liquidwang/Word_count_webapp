@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Result</title>
+    <h1>Count Result: Total words is {{ total_count }}.</h1>
+        <a href="..">Back</a>
+    <h2>User input:</h2>
+        {{ user_text }}
+    <h2> Frequency: </h2>
+    Max word or Punctuation: {{ max_word_value }}
+    <br>
+    Char and Num: {{ count_word }}
+    <br>
+    Punctuation: {{ count_punctuation }}
+    <br>
+    {% for word, count in sorted_dict %}
+    "{{ word }}" - {{ count }},
+        <br>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>
